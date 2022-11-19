@@ -9,6 +9,8 @@ from .logger import *
 # the purpose of multiprocessing is to recover when torch-mlir crashes in C code,
 # which is likely since it is unstable nightly builds only as of July 2022
 
+# Split off sketchy iree stuff into separate cmd line option
+
 def main(log_level='INFO'):
     print(to_export)  
     for i in range(len(to_export)):
